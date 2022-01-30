@@ -1,0 +1,140 @@
+html {
+  font-family: 'Noto Sans JP', sans-serif;
+  font-size: 10px;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+.page-container {
+  display: grid;
+  grid-template-rows: auto 1fr 1279px;
+  height: 8802px;
+}
+
+.header {
+  display: grid;
+  grid-template-rows: 1.1fr 1.3fr 1fr 1fr;
+}
+
+.header-notice {
+  display: flex;
+  background-color: black;
+  color: white;
+  align-items: center;
+  padding: 0 20px;
+}
+
+.header-notice__link {
+  display: flex;
+  color: #ffffff;
+  text-decoration: none;
+  align-items: center;
+  font-size: 1.2rem;
+}
+
+.header-notice__icon {
+  height: 14px;
+  width: 14px;
+  margin-right: 13px;
+  transform: scale(1.5);
+}
+
+.header-nav {
+  padding: 0 20px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.header-nav__logo {
+  width: 76px;
+}
+
+.header-nav__menu {
+  display: flex;
+  justify-content: space-between;
+  width: 148px;
+}
+
+.header-nav__btn {
+  width: 22px;
+  border: none;
+  background: none;
+}
+
+.header-search {
+  padding: 0 20px;
+  display: flex;
+  align-items: center;
+}
+
+.search-container {
+  background: #f5f5f5;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 12px 20px;
+  border-radius: 20px;
+}
+
+.search-container__input {
+  width: 100%;
+  border: none;
+  background: #f5f5f5;
+  padding: 0 20px;
+  font-size: 1.6rem;
+}
+
+.search-container__icon {
+  width: 22px;
+}
+
+.header-stores {
+  margin: 0 20px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border-bottom: 1px solid #efefef;
+}
+
+.header-stores > div {
+  display: flex;
+}
+
+.header-stores__icon {
+  width: 24px;
+  margin-right: 10px;
+}
+
+.header-stores__text {
+  font-size: 1.2rem;
+}
+
+.header-stores__text--left {
+  font-weight: bold;
+  align-self: center;
+}
+
+.header-stores__text--right {
+  width: 45%;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.footer {
+  background: blue;
+}
+
+#iphone-se-background {
+  position: absolute;
+  width: 100%;
+  opacity: 0.4;
+  z-index: auto;
+}
+
