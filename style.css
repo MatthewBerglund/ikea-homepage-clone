@@ -61,6 +61,11 @@ html {
 }
 
 .header-nav__btn {
+  border: none;
+  background: none;
+}
+
+.header-nav__icon {
   width: 22px;
   border: none;
   background: none;
