@@ -34,13 +34,22 @@ html {
   font-size: 1.2rem;
 }
 
+.header-notice__link:hover {
+  cursor: pointer;
+  color: #dfdfdf;
+}
+
 .header-notice__icon {
   margin-right: 13px;
   padding: 2px 0;
 }
 
-.header-notice__link > span {
+.header-notice__text {
   padding: 3px 0;
+}
+
+.header-notice__text:hover {
+  text-decoration: underline;
 }
 
 .header-nav {
