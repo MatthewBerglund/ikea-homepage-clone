@@ -129,6 +129,7 @@ html {
   display: flex;
   border-radius: 20px;
   padding: 6px 6px;
+  transition: all 0.2s ease;
 }
 
 .search-container__icon-wrapper:hover {
