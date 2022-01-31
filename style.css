@@ -9,12 +9,6 @@ html {
   padding: 0;
 }
 
-.page-container {
-  display: grid;
-  grid-template-rows: auto 1fr 1279px;
-  height: 8802px;
-}
-
 .header {
   display: grid;
   grid-template-rows: 1.1fr 1.3fr 1fr 1.1fr;
@@ -206,3 +200,6 @@ html {
   z-index: auto;
 }
 
+@media screen and (min-width: 600px) {
+  
+}
