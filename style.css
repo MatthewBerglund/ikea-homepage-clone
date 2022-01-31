@@ -17,7 +17,7 @@ html {
 
 .header {
   display: grid;
-  grid-template-rows: 1.1fr 1.3fr 1fr 1fr;
+  grid-template-rows: 1.1fr 1.3fr 1fr 1.1fr;
 }
 
 .header-notice {
@@ -101,25 +101,59 @@ html {
 }
 
 .search-container {
+  position: relative;
   background: #f5f5f5;
   width: 100%;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 12px 20px;
-  border-radius: 20px;
+  padding: 7px 20px;
+  border-radius: 27px;
+  transition: all 0.2s ease;
+}
+
+.search-container:hover {
+  cursor: text;
+  background: #dfdfdf;
 }
 
 .search-container__input {
   width: 100%;
   border: none;
-  background: #f5f5f5;
+  background: transparent;
   padding: 0 20px;
   font-size: 1.6rem;
 }
 
+.search-container__icon-wrapper {
+  display: flex;
+  border-radius: 20px;
+  padding: 6px 6px;
+}
+
+.search-container__icon-wrapper:hover {
+  cursor: pointer;
+  background: #cccccc;
+}
+
 .search-container__icon {
   width: 18px;
+}
+
+.search-container__tooltip {
+  position: absolute;
+  background: #000000;
+  color: #ffffff;
+  right: 19px;
+  top: 44px;
+  padding: 8px 9px 10px 10px;
+  border-radius: 5px;
+  font-size: 1.2rem;
+  display: none;
+}
+
+.search-container__tooltip--visible {
+  display: block;
 }
 
 .header-stores {
