@@ -151,6 +151,7 @@ html {
   border-radius: 5px;
   font-size: 1.2rem;
   display: none;
+  z-index: 1;
 }
 
 .search-container__tooltip--visible {
@@ -163,6 +164,11 @@ html {
   align-items: center;
   justify-content: space-between;
   border-bottom: 1px solid #efefef;
+}
+
+.header-stores:hover {
+  cursor: pointer;
+  text-decoration: underline;
 }
 
 .header-stores > div {
@@ -184,14 +190,12 @@ html {
 }
 
 .header-stores__text--right {
-  width: 45%;
+  position: absolute;
+  width: 38%;
   overflow: hidden;
   text-overflow: ellipsis;
   white-space: nowrap;
-}
-
-.footer {
-  background: blue;
+  right: 20px;
 }
 
 #iphone-se-background {
