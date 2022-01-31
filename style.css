@@ -201,5 +201,20 @@ html {
 }
 
 @media screen and (min-width: 600px) {
-  
+  .header-notice {
+    justify-content: center;
+  }
+
+  .header-nav, 
+  .header-search {
+    padding: 0 30px;
+  }
+
+  .header-stores {
+    margin: 0 30px;
+  }
+
+  .header-stores__text--right {
+    right: 30px;
+  }
 }
