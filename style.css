@@ -60,7 +60,7 @@ html {
 }
 
 .header__logo {
-  width: 76px;
+  width: 90px;
 }
 
 .header__hamburger-btn {
@@ -266,5 +266,25 @@ html {
 
   .header-stores {
     grid-column: 1 / 7;
+  }
+}
+
+@media screen and (min-width: 900px) {
+  .notice {
+    height: 40px;
+    margin-bottom: 10px;
+  }
+
+  .header {
+    grid-template-rows: 1.4fr 1.2fr;
+    padding: 0 50px;
+  }
+
+  .header-search {
+    height: 50px;
+  }
+
+  .header-stores__text--right {
+    right: 50px;
   }
 }
