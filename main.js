@@ -1,9 +1,9 @@
-const photoLink = document.querySelector('.search-container__icon-wrapper');
+const photoLink = document.querySelector('.header-search__link');
 
 photoLink.addEventListener('mouseenter', () => {
-  document.querySelector('.search-container__tooltip').classList.toggle('search-container__tooltip--visible');;
+  document.querySelector('.header-search__tooltip').classList.toggle('header-search__tooltip--visible');;
 });
 
 photoLink.addEventListener('mouseleave', () => {
-  document.querySelector('.search-container__tooltip').classList.toggle('search-container__tooltip--visible');;
+  document.querySelector('.header-search__tooltip').classList.toggle('header-search__tooltip--visible');;
 });
