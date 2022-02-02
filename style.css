@@ -321,19 +321,24 @@ html {
 }
 
 @media screen and (min-width: 1200px) {
+  .notice {
+    margin-bottom: 10px;
+  }
+  
   .header {
     grid-template-columns: auto 2fr 210px 45px 45px 45px 45px;
-    padding: 10px 30px 0 100px;
   }
 
+  .header,
   .main {
-    padding: 0 30px 0 100px;
+    padding: 0 70px 0 10%;
   }
 
   .hamburger-btn {
-    left: 30px;
+    left: 5%;
     position: absolute;
     top: 65px;
+    transform: translateX(-50%);
   }
 
   .logo {
