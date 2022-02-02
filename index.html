@@ -12,8 +12,8 @@
 </head>
 <body>
   <div class="notice">
-    <a class="notice__link">
-      <svg class="notice__icon" width="24" height="24" viewBox="0 0 24 24" fill="none"
+    <a class="stock-notice">
+      <svg class="stock-notice__icon" width="24" height="24" viewBox="0 0 24 24" fill="none"
         xmlns="http://www.w3.org/2000/svg">
         <path
           d="M11 10.9794C11 10.4271 11.4477 9.97937 12 9.97937C12.5523 9.97937 13 10.4271 13 10.9794V16.9794C13 17.5317 12.5523 17.9794 12 17.9794C11.4477 17.9794 11 17.5317 11 16.9794V10.9794Z"
@@ -25,30 +25,54 @@
           d="M12 2C6.47715 2 2 6.47715 2 12C2 17.5228 6.47715 22 12 22C17.5228 22 22 17.5228 22 12C22 6.47715 17.5228 2 12 2ZM4 12C4 16.4183 7.58172 20 12 20C16.4183 20 20 16.4183 20 12C20 7.58172 16.4183 4 12 4C7.58172 4 4 7.58172 4 12Z"
           fill="white" />
       </svg>
-      <span class="notice__text">オンラインストアの在庫確認方法はこちら</span>
+      <span class="stock-notice__text">オンラインストアの在庫確認方法はこちら</span>
     </a>
   </div>
   <header class="header">
-    <a class="header__logo-wrapper"><img class="header__logo" src="assets/images/ikea-logo.f7d9229f806b59ec64cb.svg"></img></a>
-    <button class="header__hamburger-btn"><img class="header__hamburger-icon" src="assets/icons/text-align-justify-svgrepo-com.svg"></button>
-    <a class="header-nav__link header-nav__link--profile"><img class="header-nav__icon" src="assets/icons/user-svgrepo-com.svg"></img></a>
-    <a class="header-nav__link header-nav__link--favs"><img class="header-nav__icon" src="assets/icons/heart-svgrepo-com.svg"></img></a>
-    <a class="header-nav__link header-nav__link--basket"><img class="header-nav__icon" src="assets/icons/shopping-cart-svgrepo-com.svg"></img></a>
-    <div class="header-search">
-      <img class="header-search__icon" src="assets/icons/search-svgrepo-com.svg">
-      <input class="header-search__input" type="search" placeholder="何を探していますか？">
-      <a class="header-search__link"><img class="header-search__icon" src="assets/icons/camera-svgrepo-com.svg"></a>
-      <span class="header-search__tooltip">写真でイケアの商品を検索</span>
-    </div>
-    <a class="header-stores">
-      <img class="header-stores__icon" src="assets/icons/front-store-with-awning-svgrepo-com.svg">
-      <span class="header-stores__text header-stores__text--left">ストアを選択</span>
-      <span class="header-stores__text header-stores__text--right">営業時間などをご確認ください</span>
+    <a class="logo">
+      <img class="logo__img" src="assets/images/ikea-logo.f7d9229f806b59ec64cb.svg"></img>
     </a>
+    <button class="hamburger-btn">
+      <img class="hamburger-btn__icon" src="assets/icons/text-align-justify-svgrepo-com.svg">
+    </button>
+    <a class="user-nav user-nav--orders">
+      <img class="user-nav__icon" src="assets/icons/delivery-svgrepo-com.svg"></img>
+    </a>
+    <a class="user-nav user-nav--profile">
+      <img class="user-nav__icon" src="assets/icons/user-svgrepo-com.svg"></img>
+    </a>
+    <a class="user-nav user-nav--favs">
+      <img class="user-nav__icon" src="assets/icons/heart-svgrepo-com.svg"></img>
+    </a>
+    <a class="user-nav user-nav--basket">
+      <img class="user-nav__icon" src="assets/icons/shopping-cart-svgrepo-com.svg"></img>
+    </a>
+    <div class="search">
+      <img class="search__icon" src="assets/icons/search-svgrepo-com.svg">
+      <input class="search__input" type="search" placeholder="何を探していますか？">
+      <a class="photo-search">
+        <img class="photo-search__icon" src="assets/icons/camera-svgrepo-com.svg">
+      </a>
+      <span class="search__tooltip">写真でイケアの商品を検索</span>
+    </div>
+    <a class="store-locator">
+      <img class="store-locator__icon" src="assets/icons/front-store-with-awning-svgrepo-com.svg">
+      <span class="store-locator__text store-locator__text--main">ストアを選択</span>
+      <span class="store-locator__text store-locator__text--sub">営業時間などをご確認ください</span>
+    </a>
+    <nav class="product-nav">
+      <a class="product-nav__link">商品一覧</a>
+      <a class="product-nav__link">部屋別</a>
+      <a class="product-nav__link">新学期特集</a>
+    </nav>
   </header>
-  <main class="main"></main>
+
+  <main class="main">
+    <div class="horizontal-line"></div>
+  </main>
+
   <footer class="footer"></footer>
-  <!-- <img id="iphone-se-background" src="assets/images/www.ikea.com_jp_en_(iPhone SE).png" alt=""> -->
+
   <script src="main.js"></script>
 </body>
 </html>
