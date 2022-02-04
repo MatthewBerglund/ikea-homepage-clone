@@ -38,6 +38,10 @@
   background: #ffffff;
 }
 
+.item__body--dark .item__link:hover {
+  background: #f5f5f5;
+}
+
 .item__body--pink {
   background: #eeddd9;
 }
