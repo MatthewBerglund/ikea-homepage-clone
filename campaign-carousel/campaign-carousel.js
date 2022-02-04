@@ -1,13 +1,47 @@
 const container = document.querySelector('.carousel');
-const scrollWidth = container.scrollWidth;
-
 const leftBtn = document.querySelector('.carousel__scroll-btn--left');
-leftBtn.addEventListener('click', scrollLeft);
-
 const rightBtn = document.querySelector('.carousel__scroll-btn--right');
-rightBtn.addEventListener('click', scrollRight);
+const firstCarouselItem = document.querySelector('.item:first-of-type');
+const lastCarouselItem = document.querySelector('.item:last-of-type');
 
+const scrollWidth = container.scrollWidth;
 let currentPosition = 0;
+bindEvents();
+
+function bindEvents() {
+  container.addEventListener('mouseenter', handleContainerMouseEnter);
+  container.addEventListener('mouseleave', handleContainerMouseLeave);
+  leftBtn.addEventListener('click', scrollLeft);
+  rightBtn.addEventListener('click', scrollRight);
+
+  const observer = new IntersectionObserver(handleIntersection, {
+    root: container,
+    threshold: 1.0
+  });
+
+  observer.observe(firstCarouselItem);
+  observer.observe(lastCarouselItem);
+}
+
+function handleContainerMouseEnter() {
+  leftBtn.classList.add('carousel__scroll-btn--visible');
+  rightBtn.classList.add('carousel__scroll-btn--visible');
+}
+
+function handleContainerMouseLeave() {
+  leftBtn.classList.remove('carousel__scroll-btn--visible');
+  rightBtn.classList.remove('carousel__scroll-btn--visible');
+}
+
+function handleIntersection(entries) {
+  entries.forEach(entry => {
+    if (entry.isIntersecting && entry.target === firstCarouselItem) {
+      leftBtn.style.display = 'none';
+    } else if (entry.isIntersecting && entry.target === lastCarouselItem) {
+      rightBtn.style.display = 'none';
+    }
+  });
+}
 
 function scrollRight() {
   const options = {
@@ -22,10 +56,6 @@ function scrollRight() {
 
   container.scrollBy(options);
   currentPosition += scrollWidth / 3;
-
-  if (currentPosition === (scrollWidth / 3) * 2) {
-    rightBtn.style.display = 'none';
-  }
 }
 
 function scrollLeft() {
@@ -41,8 +71,4 @@ function scrollLeft() {
 
   container.scrollBy(options);
   currentPosition -= scrollWidth / 3;
-
-  if (currentPosition === 0) {
-    leftBtn.style.display = 'none';
-  }
 }
