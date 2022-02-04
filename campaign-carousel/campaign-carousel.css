@@ -63,6 +63,10 @@
   display: flex;
 }
 
+.item__banner:hover {
+  cursor: pointer;
+}
+
 .item__img {
   object-fit: cover;
   width: 100%;
