@@ -9,6 +9,7 @@
   <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="header/header.css">
   <link rel="stylesheet" href="featured-campaign/featured.css">
+  <link rel="stylesheet" href="campaign-carousel/campaign-carousel.css">
   <link rel="stylesheet" href="page.css">
   <title>IKEA (CLONE)</title>
 </head>
@@ -73,7 +74,8 @@
 
   <main class="main">
 
-    <section>
+    <!-- FEATURED CAMPAIGN -->
+    <section class="section">
       <div class="campaign">
         <a class="campaign__banner">
           <img class="campaign__img" src="assets/images/baking_valentines.avif">
@@ -86,8 +88,102 @@
       </div>
     </section>
 
-    <section>
-      
+    <!-- CAMPAIGN CAROUSEL -->
+    <section class="section">
+      <div class="carousel">
+
+        <div class="item">
+          <a class="item__banner">
+            <img class="item__img" src="assets/images/living_room_bike_600.jpg">
+          </a>
+          <div class="item__body item__body--pink">
+            <h2 class="item__headline">新生活におすすめ！一人暮らし家具・インテリア特集</h2>
+            <p class="item__subline">初めての一人暮らしに悩む方に、イケアがおすすめするお手ごろでコンパクトな家具を集めました。ベッドやデスクにソファ、収納家具、一人暮らしを快適に始めるために必要なものがそろっています！</p>
+            <a class="item__link">→</a>
+          </div>
+        </div>
+
+        <div class="item">
+          <a class="item__banner">
+            <img class="item__img" src="assets/images/living_room_horse_pillows.png">
+          </a>
+          <div class="item__body item__body--light-blue">
+            <h2 class="item__headline">HÄSTHAGE/ヘスターゲ コレクション</h2>
+            <p class="item__subline">スウェーデンのシンボル、ダーラナホースが日本の暮らしにも馴染むシンプルで機能的なデザインとして登場。日常使いにも、プレゼントにもぴったりです。</p>
+            <a class="item__link">→</a>
+          </div>
+        </div>
+        <div class="item">
+          <a class="item__banner">
+            <img class="item__img" src="assets/images/service_cart.jpg">
+          </a>
+          <div class="item__body item__body--yellow">
+            <h2 class="item__headline">ワゴンであなたにぴったりの収納をつくろう</h2>
+            <p class="item__subline">ワゴンなら狭いスペースでも使えるうえ、必要な場所に自由に移動できて便利。自分にぴったりのワゴンを探しませんか？</p>
+            <a class="item__link">→</a>
+          </div>
+        </div>
+        <div class="item">
+          <a class="item__banner">
+            <img class="item__img" src="assets/images/baking_valentines.png">
+          </a>
+          <div class="item__body">
+            <h2 class="item__headline">バレンタインに、大切な人への気持ちを込めて</h2>
+            <p class="item__subline">ベーキングカップから耐久性に優れたマフィン型まで、さまざまなベーキング用品がそろっています。手づくりのお菓子で、バレンタインにあなたの大切な人に気持ちを伝えませんか？</p>
+            <a class="item__link">→</a>
+          </div>
+        </div>
+        <div class="item">
+          <a class="item__banner">
+            <img class="item__img" src="assets/images/closet-storage-best-ideas-and-items-68d183dd69da6300e9ea2fef4ef7f120.jpg">
+          </a>
+          <div class="item__body item__body--gray">
+            <h2 class="item__headline">クローゼット収納のコツ＆おすすめアイテム</h2>
+            <p class="item__subline">クローゼット収納を使いやすくするコツやアイテムをご紹介。ハンガーや吊り下げ収納などで使いやすくすっきりさせましょう！</p>
+            <a class="item__link">→</a>
+          </div>
+        </div>
+        <div class="item">
+          <a class="item__banner">
+            <img class="item__img" src="assets/images/best-small-storage-solutions-for-home-b67a60890ffc15abb60087cf364bb904.png">
+          </a>
+          <div class="item__body item__body--green">
+            <h2 class="item__headline">今すぐ始めたいすっきり収納</h2>
+            <p class="item__subline">ものが増えすぎてあふれたり、限られたスペースをうまく使いたいとお悩みですか？すっきり整理整頓して年末年始を快適に家で過ごしましょう！</p>
+            <a class="item__link">→</a>
+          </div>
+        </div>
+        <div class="item">
+          <a class="item__banner">
+            <img class="item__img" src="assets/images/bedroom_600_600.jpg">
+          </a>
+          <div class="item__body item__body--brown item__body--dark">
+            <h2 class="item__headline">冬のあったか寝具</h2>
+            <p class="item__subline">寒い季節でも体がしっかり休まるようにあったか寝具をそろえましょう。</p>
+            <a class="item__link">→</a>
+          </div>
+        </div>
+        <div class="item">
+          <a class="item__banner">
+            <img class="item__img" src="assets/images/shichguratan-fea-3c18637568a8331de760c7cfce0d6cba.jpg">
+          </a>
+          <div class="item__body item__body--light-brown item__body--dark">
+            <h2 class="item__headline">シチュー＆グラタン フェア</h2>
+            <p class="item__subline">心もからだもポカポカに、シチュー ＆ グラタン フェア開催！ 期間：2022年1月13日（木）～2月27日（日）</p>
+            <a class="item__link">→</a>
+          </div>
+        </div>
+        <div class="item">
+          <a class="item__banner">
+            <img class="item__img" src="assets/images/offers_recommendations_japanese.jpg">
+          </a>
+          <div class="item__body item__body--blue item__body--dark">
+            <h2 class="item__headline">詳しく見る</h2>
+            <p class="item__subline"></p>
+            <a class="item__link">→</a>
+          </div>
+        </div>
+      </div>
     </section>
 
   </main>

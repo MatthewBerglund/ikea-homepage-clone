@@ -23,6 +23,10 @@
   padding: 40px;
 }
 
+.campaign__body--pink {
+  background: #eeddd9;
+}
+
 .campaign__headline {
   font-size: 1.8rem;
 }

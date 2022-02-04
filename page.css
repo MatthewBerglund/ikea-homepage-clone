@@ -19,6 +19,10 @@ html {
   padding: 40px 20px;
 }
 
+.section {
+  margin-bottom: 40px;
+}
+
 @media screen and (min-width: 600px) {
   .horizontal-line {
     margin: 0 30px;
