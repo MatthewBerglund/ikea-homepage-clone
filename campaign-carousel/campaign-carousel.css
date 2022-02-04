@@ -9,6 +9,18 @@
   scrollbar-width: thin;
 }
 
+.carousel::-webkit-scrollbar {
+  height: 10px;
+}
+
+.carousel::-webkit-scrollbar-thumb {
+  background: #111111;
+}
+
+.carousel::-webkit-scrollbar-track {
+  background: #dfdfdf;
+}
+
 .carousel__scroll-btn {
   align-items: center;
   background: #000000;
@@ -30,6 +42,7 @@
 }
 
 .carousel__scroll-btn--left {
+  display: none;
   left: -1%;
   top: 45%;
 }

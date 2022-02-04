@@ -7,6 +7,8 @@ leftBtn.addEventListener('click', scrollLeft);
 const rightBtn = document.querySelector('.carousel__scroll-btn--right');
 rightBtn.addEventListener('click', scrollRight);
 
+let currentPosition = 0;
+
 function scrollRight() {
   const options = {
     top: 0,
@@ -14,7 +16,16 @@ function scrollRight() {
     behavior: 'smooth'
   };
 
+  if (currentPosition === 0) {
+    leftBtn.style.display = 'flex';
+  }
+
   container.scrollBy(options);
+  currentPosition += scrollWidth / 3;
+
+  if (currentPosition === (scrollWidth / 3) * 2) {
+    rightBtn.style.display = 'none';
+  }
 }
 
 function scrollLeft() {
@@ -24,5 +35,14 @@ function scrollLeft() {
     behavior: 'smooth'
   };
 
+  if (currentPosition < (scrollWidth / 3) * 2) {
+    rightBtn.style.display = 'flex';
+  }
+
   container.scrollBy(options);
+  currentPosition -= scrollWidth / 3;
+
+  if (currentPosition === 0) {
+    leftBtn.style.display = 'none';
+  }
 }
