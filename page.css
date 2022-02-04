@@ -21,6 +21,7 @@ html {
 
 .section {
   margin-bottom: 40px;
+  position: relative;
 }
 
 @media screen and (min-width: 600px) {

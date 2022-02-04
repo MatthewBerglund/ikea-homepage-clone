@@ -1,15 +1,44 @@
 .carousel {
   display: grid;
-  grid-template-columns: repeat(9, calc(calc(100% - 40px) / 3));
+  grid-template-columns: repeat(9, calc(calc(100% - 60px) / 3));
   grid-template-rows: 1fr;
   grid-column-gap: 20px;
   overflow-x: scroll;
   width: 100%;
+  scrollbar-color: #111111 #dfdfdf;
+  scrollbar-width: thin;
+}
+
+.carousel__scroll-btn {
+  align-items: center;
+  background: #000000;
+  border: none;
+  border-radius: 32px;
+  color: #ffffff;
+  display: flex;
+  font-size: 4rem;
+  height: 40px;
+  justify-content: center;
+  padding-bottom: 5px;
+  position: absolute;
+  width: 40px;
+}
+
+.carousel__scroll-btn--left {
+  top: 45%;
+  left: -1%;
+}
+
+.carousel__scroll-btn--right {
+  top: 45%;
+  right: 0;
+  transform: translateX(50%);
 }
 
 .item {
   display: grid;
   grid-template-rows: 1fr 380px;
+  margin-bottom: 40px;
 }
 
 .item__banner {
