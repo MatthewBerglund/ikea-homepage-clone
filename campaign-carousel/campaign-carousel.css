@@ -12,8 +12,8 @@
 .carousel__scroll-btn {
   align-items: center;
   background: #000000;
-  border: none;
   border-radius: 32px;
+  border: none;
   color: #ffffff;
   display: flex;
   font-size: 4rem;
@@ -24,14 +24,19 @@
   width: 40px;
 }
 
+.carousel__scroll-btn:hover {
+  background: #333333;
+  cursor: pointer;
+}
+
 .carousel__scroll-btn--left {
-  top: 45%;
   left: -1%;
+  top: 45%;
 }
 
 .carousel__scroll-btn--right {
-  top: 45%;
   right: 0;
+  top: 45%;
   transform: translateX(50%);
 }
 
