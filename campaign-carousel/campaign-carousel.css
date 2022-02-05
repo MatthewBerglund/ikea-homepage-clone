@@ -43,7 +43,6 @@
 }
 
 .carousel__scroll-btn--left {
-  display: none;
   left: -1%;
   top: 45%;
 }

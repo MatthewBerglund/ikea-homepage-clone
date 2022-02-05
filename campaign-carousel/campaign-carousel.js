@@ -5,7 +5,6 @@ const firstCarouselItem = document.querySelector('.item:first-of-type');
 const lastCarouselItem = document.querySelector('.item:last-of-type');
 
 const scrollWidth = container.scrollWidth;
-let currentPosition = 0;
 bindEvents();
 
 function bindEvents() {
@@ -35,10 +34,20 @@ function handleContainerMouseLeave() {
 
 function handleIntersection(entries) {
   entries.forEach(entry => {
-    if (entry.isIntersecting && entry.target === firstCarouselItem) {
-      leftBtn.style.display = 'none';
-    } else if (entry.isIntersecting && entry.target === lastCarouselItem) {
-      rightBtn.style.display = 'none';
+    if (entry.target === firstCarouselItem) {
+      if (entry.isIntersecting) {
+        leftBtn.style.display = 'none';
+      } else {
+        leftBtn.style.display = 'flex';
+      }
+    }
+
+    if (entry.target === lastCarouselItem) {
+      if (entry.isIntersecting) {
+        rightBtn.style.display = 'none';
+      } else {
+        rightBtn.style.display = 'flex';
+      }
     }
   });
 }
@@ -50,12 +59,7 @@ function scrollRight() {
     behavior: 'smooth'
   };
 
-  if (currentPosition === 0) {
-    leftBtn.style.display = 'flex';
-  }
-
   container.scrollBy(options);
-  currentPosition += scrollWidth / 3;
 }
 
 function scrollLeft() {
@@ -65,10 +69,5 @@ function scrollLeft() {
     behavior: 'smooth'
   };
 
-  if (currentPosition < (scrollWidth / 3) * 2) {
-    rightBtn.style.display = 'flex';
-  }
-
   container.scrollBy(options);
-  currentPosition -= scrollWidth / 3;
 }
