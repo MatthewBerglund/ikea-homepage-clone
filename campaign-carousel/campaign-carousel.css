@@ -1,12 +1,12 @@
 .carousel {
   display: grid;
-  grid-template-columns: repeat(9, calc(calc(100% - 60px) / 3));
+  grid-column-gap: 10px;
+  grid-template-columns: repeat(9, calc(calc(100% - 30px) / 2.05));
   grid-template-rows: 1fr;
-  grid-column-gap: 20px;
   overflow-x: scroll;
-  width: 100%;
   scrollbar-color: #111111 #dfdfdf;
   scrollbar-width: thin;
+  width: 104%;
 }
 
 .carousel::-webkit-scrollbar {
@@ -59,7 +59,7 @@
 
 .item {
   display: grid;
-  grid-template-rows: 1fr 380px;
+  grid-template-rows: auto 1fr;
   margin-bottom: 40px;
 }
 
@@ -72,6 +72,7 @@
 }
 
 .item__img {
+  aspect-ratio: 1 / 1;
   object-fit: cover;
   width: 100%;
 }
@@ -147,10 +148,18 @@
   font-weight: bold;
   height: 6rem;
   justify-content: center;
+  margin-top: 50px;
   width: 6rem;
 }
 
 .item__link:hover {
   background: #333333;
   cursor: pointer;
+}
+
+@media screen and (min-width: 900px) {
+  .carousel {
+    grid-column-gap: 20px;
+    grid-template-columns: repeat(9, calc(calc(100% - 60px) / 3));
+  }
 }
