@@ -168,6 +168,10 @@
     padding: 0 30px;
   }
 
+  .carousel::-webkit-scrollbar-track {
+    margin: 0 30px;
+  }
+
   .item__headline {
     font-size: 2.5rem;
   }
