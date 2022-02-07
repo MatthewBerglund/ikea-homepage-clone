@@ -21,13 +21,19 @@ html {
 }
 
 .section {
-  margin-bottom: 100px;
+  margin-bottom: 80px;
   padding: 0 20px;
   position: relative;
 }
 
 .section--carousel {
+  margin-bottom: 50px;
   padding: 0;
+}
+
+.section__title {
+  font-size: 2rem;
+  margin-bottom: 40px;
 }
 
 @media screen and (min-width: 600px) {

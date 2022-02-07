@@ -19,7 +19,6 @@
 
 .product-guide-carousel::-webkit-scrollbar-track {
   background: #dfdfdf;
-  margin: 0 20px;
 }
 
 .product-guide-carousel__scroll-btn {
@@ -129,29 +128,4 @@
   justify-content: center;
   padding: 0;
   width: 40px;
-}
-
-@media screen and (min-width: 600px) {
-  .product-guide-carousel {
-    grid-column-gap: 10px;
-    grid-template-columns: repeat(9, calc(calc(100% - 30px) / 2.15));
-    padding: 0 30px;
-  }
-
-  .product-guide-carousel::-webkit-scrollbar-track {
-    margin: 0 30px;
-  }
-}
-
-@media screen and (min-width: 900px) {
-  .product-guide-carousel {
-    grid-column-gap: 20px;
-    grid-template-columns: repeat(9, calc(calc(100% - 60px) / 3));
-    padding: 0;
-    width: 100%;
-  }
-
-  .product-guide-carousel::-webkit-scrollbar-track {
-    margin: 0;
-  }
 }
