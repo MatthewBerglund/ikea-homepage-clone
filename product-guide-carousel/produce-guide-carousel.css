@@ -1,7 +1,7 @@
 .product-guide-carousel {
   display: grid;
   grid-column-gap: 20px;
-  grid-template-columns: repeat(8, 200px);
+  grid-template-columns: repeat(8, 230px);
   grid-template-rows: 1fr;
   overflow-x: scroll;
   scrollbar-color: #111111 #dfdfdf;
@@ -59,9 +59,76 @@
 }
 
 .product-guide-item {
+  align-items: flex-end;
   background: green;
+  background-size: cover;
+  display: flex;
   height: 300px;
+  justify-content: center;
   margin-bottom: 40px;
+  padding: 30px;
+}
+
+.product-guide-item--solid {
+  align-items: flex-start;
+  background: #00853e;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.product-guide-item--solid .product-guide-item__text {
+  color: #ffffff;
+  font-size: 1.6rem;
+  font-weight: bold;
+}
+
+.product-guide-item--faucet {
+  background-image: url(/assets/images/hand_faucet.jpg);
+}
+
+.product-guide-item--switch {
+  background-image: url(/assets/images/hand_lamp_switch.jpg);
+}
+
+.product-guide-item--pillow {
+  background-image: url(/assets/images/head_pillow.jpg);
+}
+
+.product-guide-item--bins {
+  background-image: url(/assets/images/white_trash_bins.jpg);
+}
+
+.product-guide-item--chair {
+  background-image: url(/assets/images/chair.jpg);
+}
+
+.product-guide-item--table {
+  background-image: url(/assets/images/gamlehult-chair-0d5143342879ccdb6499425b328816a6.jpg);
+}
+
+.product-guide-item--meatballs {
+ background-image: url(/assets/images/huvudroll-plant-balls-3e939a65b6b69abe566a5edd70d87c40.jpg);
+}
+
+.product-guide-item__link {
+  display: block;
+  background: #ffffff;
+  border-radius: 20px;
+  font-size: 1.2rem;
+  font-weight: bold;
+  height: 40px;
+  padding: 10px 25px;
+  width: fit-content;
+}
+
+.product-guide-item__link--arrow {
+  align-items: center;
+  display: flex;
+  font-size: 2rem;
+  height: 40px;
+  justify-content: center;
+  padding: 0;
+  width: 40px;
 }
 
 @media screen and (min-width: 600px) {
