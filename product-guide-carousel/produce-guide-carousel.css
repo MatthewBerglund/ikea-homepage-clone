@@ -1,0 +1,90 @@
+.product-guide-carousel {
+  display: grid;
+  grid-column-gap: 20px;
+  grid-template-columns: repeat(8, 200px);
+  grid-template-rows: 1fr;
+  overflow-x: scroll;
+  scrollbar-color: #111111 #dfdfdf;
+  scrollbar-width: thin;
+  width: 100%;
+}
+
+.product-guide-carousel::-webkit-scrollbar {
+  height: 10px;
+}
+
+.product-guide-carousel::-webkit-scrollbar-thumb {
+  background: #111111;
+}
+
+.product-guide-carousel::-webkit-scrollbar-track {
+  background: #dfdfdf;
+  margin: 0 20px;
+}
+
+.product-guide-carousel__scroll-btn {
+  align-items: center;
+  background: #000000;
+  border-radius: 32px;
+  border: none;
+  color: #ffffff;
+  display: flex;
+  font-size: 4rem;
+  height: 40px;
+  justify-content: center;
+  padding-bottom: 5px;
+  position: absolute;
+  visibility: hidden;
+  width: 40px;
+}
+
+.product-guide-carousel__scroll-btn:hover {
+  background: #333333;
+  cursor: pointer;
+}
+
+.product-guide-carousel__scroll-btn--left {
+  left: -1%;
+  top: 45%;
+}
+
+.product-guide-carousel__scroll-btn--right {
+  right: 0;
+  top: 45%;
+  transform: translateX(50%);
+}
+
+.product-guide-carousel__scroll-btn--visible {
+  visibility: visible;
+}
+
+.product-guide-item {
+  background: green;
+  height: 300px;
+  margin-bottom: 40px;
+}
+
+@media screen and (min-width: 600px) {
+  .product-guide-carousel {
+    grid-column-gap: 10px;
+    grid-template-columns: repeat(9, calc(calc(100% - 30px) / 2.15));
+    padding: 0 30px;
+  }
+
+  .product-guide-carousel::-webkit-scrollbar-track {
+    margin: 0 30px;
+  }
+}
+
+@media screen and (min-width: 900px) {
+  .product-guide-carousel {
+    grid-column-gap: 20px;
+    grid-template-columns: repeat(9, calc(calc(100% - 60px) / 3));
+    padding: 0;
+    width: 100%;
+  }
+
+  .product-guide-carousel::-webkit-scrollbar-track {
+    margin: 0;
+  }
+}

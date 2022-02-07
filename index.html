@@ -7,10 +7,11 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="page.css">
   <link rel="stylesheet" href="header/header.css">
   <link rel="stylesheet" href="featured-campaign/featured.css">
   <link rel="stylesheet" href="campaign-carousel/campaign-carousel.css">
-  <link rel="stylesheet" href="page.css">
+  <link rel="stylesheet" href="product-guide-carousel/produce-guide-carousel.css">
   <title>IKEA (CLONE)</title>
 </head>
 <body>
@@ -90,110 +91,124 @@
 
     <!-- CAMPAIGN CAROUSEL -->
     <section class="section section--carousel">
-      <div class="carousel">
-
-        <button  class="carousel__scroll-btn carousel__scroll-btn--left">‹</button>
-        <button class="carousel__scroll-btn carousel__scroll-btn--right">›</button>
-
-        <div class="item">
-          <a class="item__banner">
-            <img class="item__img" src="assets/images/living_room_bike_600.jpg">
+      <div class="campaign-carousel">
+        <button  class="campaign-carousel__scroll-btn campaign-carousel__scroll-btn--left">‹</button>
+        <button class="campaign-carousel__scroll-btn campaign-carousel__scroll-btn--right">›</button>
+        <div class="campaign-item">
+          <a class="campaign-item__banner">
+            <img class="campaign-item__img" src="assets/images/living_room_bike_600.jpg">
           </a>
-          <div class="item__body item__body--pink">
-            <h2 class="item__headline">新生活におすすめ！一人暮らし家具・インテリア特集</h2>
-            <p class="item__subline">初めての一人暮らしに悩む方に、イケアがおすすめするお手ごろでコンパクトな家具を集めました。ベッドやデスクにソファ、収納家具、一人暮らしを快適に始めるために必要なものがそろっています！</p>
-            <a class="item__link">→</a>
+          <div class="campaign-item__body campaign-item__body--pink">
+            <h2 class="campaign-item__headline">新生活におすすめ！一人暮らし家具・インテリア特集</h2>
+            <p class="campaign-item__subline">初めての一人暮らしに悩む方に、イケアがおすすめするお手ごろでコンパクトな家具を集めました。ベッドやデスクにソファ、収納家具、一人暮らしを快適に始めるために必要なものがそろっています！</p>
+            <a class="campaign-item__link">→</a>
           </div>
         </div>
 
-        <div class="item">
-          <a class="item__banner">
-            <img class="item__img" src="assets/images/living_room_horse_pillows.png">
+        <div class="campaign-item">
+          <a class="campaign-item__banner">
+            <img class="campaign-item__img" src="assets/images/living_room_horse_pillows.png">
           </a>
-          <div class="item__body item__body--light-blue">
-            <h2 class="item__headline">HÄSTHAGE/ヘスターゲ コレクション</h2>
-            <p class="item__subline">スウェーデンのシンボル、ダーラナホースが日本の暮らしにも馴染むシンプルで機能的なデザインとして登場。日常使いにも、プレゼントにもぴったりです。</p>
-            <a class="item__link">→</a>
+          <div class="campaign-item__body campaign-item__body--light-blue">
+            <h2 class="campaign-item__headline">HÄSTHAGE/ヘスターゲ コレクション</h2>
+            <p class="campaign-item__subline">スウェーデンのシンボル、ダーラナホースが日本の暮らしにも馴染むシンプルで機能的なデザインとして登場。日常使いにも、プレゼントにもぴったりです。</p>
+            <a class="campaign-item__link">→</a>
           </div>
         </div>
-        <div class="item">
-          <a class="item__banner">
-            <img class="item__img" src="assets/images/service_cart.jpg">
+        <div class="campaign-item">
+          <a class="campaign-item__banner">
+            <img class="campaign-item__img" src="assets/images/service_cart.jpg">
           </a>
-          <div class="item__body item__body--yellow">
-            <h2 class="item__headline">ワゴンであなたにぴったりの収納をつくろう</h2>
-            <p class="item__subline">ワゴンなら狭いスペースでも使えるうえ、必要な場所に自由に移動できて便利。自分にぴったりのワゴンを探しませんか？</p>
-            <a class="item__link">→</a>
+          <div class="campaign-item__body campaign-item__body--yellow">
+            <h2 class="campaign-item__headline">ワゴンであなたにぴったりの収納をつくろう</h2>
+            <p class="campaign-item__subline">ワゴンなら狭いスペースでも使えるうえ、必要な場所に自由に移動できて便利。自分にぴったりのワゴンを探しませんか？</p>
+            <a class="campaign-item__link">→</a>
           </div>
         </div>
-        <div class="item">
-          <a class="item__banner">
-            <img class="item__img" src="assets/images/baking_valentines.png">
+        <div class="campaign-item">
+          <a class="campaign-item__banner">
+            <img class="campaign-item__img" src="assets/images/baking_valentines.png">
           </a>
-          <div class="item__body">
-            <h2 class="item__headline">バレンタインに、大切な人への気持ちを込めて</h2>
-            <p class="item__subline">ベーキングカップから耐久性に優れたマフィン型まで、さまざまなベーキング用品がそろっています。手づくりのお菓子で、バレンタインにあなたの大切な人に気持ちを伝えませんか？</p>
-            <a class="item__link">→</a>
+          <div class="campaign-item__body">
+            <h2 class="campaign-item__headline">バレンタインに、大切な人への気持ちを込めて</h2>
+            <p class="campaign-item__subline">ベーキングカップから耐久性に優れたマフィン型まで、さまざまなベーキング用品がそろっています。手づくりのお菓子で、バレンタインにあなたの大切な人に気持ちを伝えませんか？</p>
+            <a class="campaign-item__link">→</a>
           </div>
         </div>
-        <div class="item">
-          <a class="item__banner">
-            <img class="item__img" src="assets/images/closet-storage-best-ideas-and-items-68d183dd69da6300e9ea2fef4ef7f120.jpg">
+        <div class="campaign-item">
+          <a class="campaign-item__banner">
+            <img class="campaign-item__img" src="assets/images/closet-storage-best-ideas-and-items-68d183dd69da6300e9ea2fef4ef7f120.jpg">
           </a>
-          <div class="item__body item__body--gray">
-            <h2 class="item__headline">クローゼット収納のコツ＆おすすめアイテム</h2>
-            <p class="item__subline">クローゼット収納を使いやすくするコツやアイテムをご紹介。ハンガーや吊り下げ収納などで使いやすくすっきりさせましょう！</p>
-            <a class="item__link">→</a>
+          <div class="campaign-item__body campaign-item__body--gray">
+            <h2 class="campaign-item__headline">クローゼット収納のコツ＆おすすめアイテム</h2>
+            <p class="campaign-item__subline">クローゼット収納を使いやすくするコツやアイテムをご紹介。ハンガーや吊り下げ収納などで使いやすくすっきりさせましょう！</p>
+            <a class="campaign-item__link">→</a>
           </div>
         </div>
-        <div class="item">
-          <a class="item__banner">
-            <img class="item__img" src="assets/images/best-small-storage-solutions-for-home-b67a60890ffc15abb60087cf364bb904.png">
+        <div class="campaign-item">
+          <a class="campaign-item__banner">
+            <img class="campaign-item__img" src="assets/images/best-small-storage-solutions-for-home-b67a60890ffc15abb60087cf364bb904.png">
           </a>
-          <div class="item__body item__body--green">
-            <h2 class="item__headline">今すぐ始めたいすっきり収納</h2>
-            <p class="item__subline">ものが増えすぎてあふれたり、限られたスペースをうまく使いたいとお悩みですか？すっきり整理整頓して年末年始を快適に家で過ごしましょう！</p>
-            <a class="item__link">→</a>
+          <div class="campaign-item__body campaign-item__body--green">
+            <h2 class="campaign-item__headline">今すぐ始めたいすっきり収納</h2>
+            <p class="campaign-item__subline">ものが増えすぎてあふれたり、限られたスペースをうまく使いたいとお悩みですか？すっきり整理整頓して年末年始を快適に家で過ごしましょう！</p>
+            <a class="campaign-item__link">→</a>
           </div>
         </div>
-        <div class="item">
-          <a class="item__banner">
-            <img class="item__img" src="assets/images/bedroom_600_600.jpg">
+        <div class="campaign-item">
+          <a class="campaign-item__banner">
+            <img class="campaign-item__img" src="assets/images/bedroom_600_600.jpg">
           </a>
-          <div class="item__body item__body--brown item__body--dark">
-            <h2 class="item__headline">冬のあったか寝具</h2>
-            <p class="item__subline">寒い季節でも体がしっかり休まるようにあったか寝具をそろえましょう。</p>
-            <a class="item__link">→</a>
+          <div class="campaign-item__body campaign-item__body--brown campaign-item__body--dark">
+            <h2 class="campaign-item__headline">冬のあったか寝具</h2>
+            <p class="campaign-item__subline">寒い季節でも体がしっかり休まるようにあったか寝具をそろえましょう。</p>
+            <a class="campaign-item__link">→</a>
           </div>
         </div>
-        <div class="item">
-          <a class="item__banner">
-            <img class="item__img" src="assets/images/shichguratan-fea-3c18637568a8331de760c7cfce0d6cba.jpg">
+        <div class="campaign-item">
+          <a class="campaign-item__banner">
+            <img class="campaign-item__img" src="assets/images/shichguratan-fea-3c18637568a8331de760c7cfce0d6cba.jpg">
           </a>
-          <div class="item__body item__body--light-brown item__body--dark">
-            <h2 class="item__headline">シチュー＆グラタン フェア</h2>
-            <p class="item__subline">心もからだもポカポカに、シチュー ＆ グラタン フェア開催！ 期間：2022年1月13日（木）～2月27日（日）</p>
-            <a class="item__link">→</a>
+          <div class="campaign-item__body campaign-item__body--light-brown campaign-item__body--dark">
+            <h2 class="campaign-item__headline">シチュー＆グラタン フェア</h2>
+            <p class="campaign-item__subline">心もからだもポカポカに、シチュー ＆ グラタン フェア開催！ 期間：2022年1月13日（木）～2月27日（日）</p>
+            <a class="campaign-item__link">→</a>
           </div>
         </div>
-        <div class="item">
-          <a class="item__banner">
-            <img class="item__img" src="assets/images/offers_recommendations_japanese.jpg">
+        <div class="campaign-item">
+          <a class="campaign-item__banner">
+            <img class="campaign-item__img" src="assets/images/offers_recommendations_japanese.jpg">
           </a>
-          <div class="item__body item__body--blue item__body--dark">
-            <h2 class="item__headline">詳しく見る</h2>
-            <p class="item__subline"></p>
-            <a class="item__link">→</a>
+          <div class="campaign-item__body campaign-item__body--blue campaign-item__body--dark">
+            <h2 class="campaign-item__headline">詳しく見る</h2>
+            <p class="campaign-item__subline"></p>
+            <a class="campaign-item__link">→</a>
           </div>
         </div>
       </div>
     </section>
 
+    <!-- PRODUCT GUIDE CAROUSEL -->
+    <section class="section">
+      <div class="product-guide-carousel">
+        <button  class="product-guide-carousel__scroll-btn product-guide-carousel__scroll-btn--left">‹</button>
+        <button class="product-guide-carousel__scroll-btn product-guide-carousel__scroll-btn--right">›</button>
+        <div class="product-guide-item"></div>
+        <div class="product-guide-item"></div>
+        <div class="product-guide-item"></div>
+        <div class="product-guide-item"></div>
+        <div class="product-guide-item"></div>
+        <div class="product-guide-item"></div>
+        <div class="product-guide-item"></div>
+        <div class="product-guide-item"></div>
+      </div>
+    </section>
   </main>
 
   <footer class="footer"></footer>
 
   <script src="header/header.js"></script>
   <script src="campaign-carousel/campaign-carousel.js"></script>
+  <script src="product-guide-carousel/product-guide-carousel.js"></script>
 </body>
 </html>

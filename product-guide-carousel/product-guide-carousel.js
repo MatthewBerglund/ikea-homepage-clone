@@ -1,8 +1,8 @@
-const container = document.querySelector('.campaign-carousel');
-const leftBtn = document.querySelector('.campaign-carousel__scroll-btn--left');
-const rightBtn = document.querySelector('.campaign-carousel__scroll-btn--right');
-const firstCarouselItem = document.querySelector('.item:first-of-type');
-const lastCarouselItem = document.querySelector('.item:last-of-type');
+const container = document.querySelector('.product-guide-carousel');
+const leftBtn = document.querySelector('.product-guide-carousel__scroll-btn--left');
+const rightBtn = document.querySelector('.product-guide-carousel__scroll-btn--right');
+const firstCarouselItem = document.querySelector('.product-guide-item:first-of-type');
+const lastCarouselItem = document.querySelector('.product-guide-item-item:last-of-type');
 
 const scrollWidth = container.scrollWidth;
 bindEvents();
@@ -23,13 +23,13 @@ function bindEvents() {
 }
 
 function handleContainerMouseEnter() {
-  leftBtn.classList.add('campaign-carousel__scroll-btn--visible');
-  rightBtn.classList.add('campaign-carousel__scroll-btn--visible');
+  leftBtn.classList.add('product-guide-carousel__scroll-btn--visible');
+  rightBtn.classList.add('product-guide-carousel__scroll-btn--visible');
 }
 
 function handleContainerMouseLeave() {
-  leftBtn.classList.remove('campaign-carousel__scroll-btn--visible');
-  rightBtn.classList.remove('campaign-carousel__scroll-btn--visible');
+  leftBtn.classList.remove('product-guide-carousel__scroll-btn--visible');
+  rightBtn.classList.remove('product-guide-carousel__scroll-btn--visible');
 }
 
 function handleIntersection(entries) {
