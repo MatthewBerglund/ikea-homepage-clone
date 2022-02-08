@@ -1,0 +1,32 @@
+.gallery__categories {
+  overflow-x: scroll;
+  width: fit-content;
+  overflow-wrap: normal;
+  display: grid;
+  grid-template-columns: repeat(11, auto);
+  grid-template-rows: 1fr;
+  column-gap: 10px;
+}
+
+.gallery__category-btn {
+  background: #f5f5f5;
+  border: 1px solid #f5f5f5;
+  border-radius: 20px;
+  display: block;
+  font-size: 1.2rem;
+  font-weight: bold;
+  height: 40px;
+  margin-top: 6px;
+  padding: 10px 25px;
+  width: fit-content;
+  white-space: nowrap;
+}
+
+.gallery__category-btn:hover {
+  cursor: pointer;
+  background: #dfdfdf;
+}
+
+.gallery__category-btn:focus {
+  border: 1px solid black;
+}
