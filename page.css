@@ -16,7 +16,7 @@ html {
 }
 
 .main {
-  overflow-x: hidden;
+  /* overflow-x: hidden; */
   padding: 40px 20px;
 }
 
