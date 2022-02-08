@@ -19,7 +19,6 @@
 
 .campaign-carousel::-webkit-scrollbar-track {
   background: #dfdfdf;
-  margin: 0 20px;
 }
 
 .campaign-carousel__scroll-btn {
