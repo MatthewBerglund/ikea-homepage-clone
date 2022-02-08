@@ -4,7 +4,6 @@
   grid-template-columns: repeat(9, calc(calc(100% - 30px) / 1.08));
   grid-template-rows: 1fr;
   overflow-x: scroll;
-  padding: 0 20px;
   scrollbar-color: #111111 #dfdfdf;
   scrollbar-width: thin;
   width: 100%;
@@ -165,11 +164,6 @@
   .campaign-carousel {
     grid-column-gap: 10px;
     grid-template-columns: repeat(9, calc(calc(100% - 30px) / 2.15));
-    padding: 0 30px;
-  }
-
-  .campaign-carousel::-webkit-scrollbar-track {
-    margin: 0 30px;
   }
 
   .campaign-item__headline {
@@ -181,11 +175,6 @@
   .campaign-carousel {
     grid-column-gap: 20px;
     grid-template-columns: repeat(9, calc(calc(100% - 60px) / 3));
-    padding: 0;
     width: 100%;
-  }
-
-  .campaign-carousel::-webkit-scrollbar-track {
-    margin: 0;
   }
 }

@@ -17,18 +17,16 @@ html {
 
 .main {
   overflow-x: hidden;
-  padding: 40px 0;
+  padding: 40px 20px;
 }
 
 .section {
   margin-bottom: 80px;
-  padding: 0 20px;
   position: relative;
 }
 
 .section--carousel {
   margin-bottom: 50px;
-  padding: 0;
 }
 
 .section__title {
@@ -42,11 +40,7 @@ html {
   }
 
   .main {
-    padding: 60px 0;
-  }
-
-  .section {
-    padding: 0 30px;
+    padding: 60px 30px;
   }
 
   .section--carousel {
@@ -60,11 +54,7 @@ html {
   }
 
   .main {
-    padding: 60px 0;
-  }
-
-  .section {
-    padding: 0 50px;
+    padding: 60px 50px;
   }
 }
 
@@ -75,9 +65,5 @@ html {
 
   .main {
     padding: 60px 40px 60px 10%;
-  }
-
-  .section {
-    padding: 0;
   }
 }
