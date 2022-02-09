@@ -16,7 +16,6 @@ html {
 }
 
 .main {
-  /* overflow-x: hidden; */
   padding: 40px 20px;
 }
 
@@ -45,6 +44,10 @@ html {
 
   .section--carousel {
     padding: 0;
+  }
+
+  .section__title {
+    font-size: 2.5rem;
   }
 }
 
