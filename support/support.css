@@ -1,0 +1,22 @@
+.support {
+  display: grid;
+  grid-template-rows: 1fr 1fr;
+  row-gap: 50px;
+  width: 100%;
+}
+
+.support__link:hover {
+  cursor: pointer;
+}
+
+.support__banner {
+  width: 100%;
+}
+
+@media screen and (min-width: 600px) {
+  .support {
+    column-gap: 20px;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr;
+  }
+}
