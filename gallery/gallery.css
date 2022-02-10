@@ -76,27 +76,131 @@
   position: absolute;
   top: 50%;
   left: 50%;
-  z-index: 1;
 }
 
-.product--stool {
-  top: 41%;
-  left: 55%;
+.product--stackholmen {
+  top: 38%;
+  left: 23%;
+}
+
+.product--gamlehult {
+  top: 72%;
+  left: 66%;
+}
+
+.product--skurup {
+  top: 4%;
+  left: 27%;
+}
+
+.product--nordkisa {
+  top: 34%;
+  left: 64%;
+}
+
+.product--nordli {
+  top: 44%;
+  left: 26%;
+}
+
+.product--karmsund {
+  top: 12%;
+  left: 20%;
+}
+
+.product--bryggja {
+  top: 60%;
+  left: 43%;
+}
+
+.product--stockholm-lamp {
+  top: 5%;
+  left: 75%;
+}
+
+.product--enhet {
+  top: 37%;
+  left: 43%;
+}
+
+.product--ledsjo {
+  top: 30%;
+  left: 52%;
+}
+
+.product--lettan {
+  top: 33%;
+  left: 75%;
+}
+
+.product--bjorkan {
+  top: 55%;
+  left: 60%;
+}
+
+.product--nysjon {
+  top: 68%;
+  left: 64%;
+}
+
+.product--nissafors {
+  top: 72%;
+  left: 15%;
+}
+
+.product--utsund {
+  top: 29%;
+  left: 61%;
+}
+
+.product--vardagen {
+  top: 58%;
+  left: 53%;
+}
+
+.product--rort {
+  top: 81%;
+  left: 41%;
+}
+
+.product--fado {
+  top: 29%;
+  left: 35%;
+}
+
+.product--malm {
+  top: 49%;
+  left: 41%;
 }
 
 .product__description {
   display: block;
   opacity: 0;
-  width: 150px;
-  height: 80px;
   background: white;
   box-shadow: 0 0 5px #00000091;
   position: absolute;
-  left: 50px;
+  left: 125%;
+  top: 50%;
   transition: all 0.3s ease;
   visibility: hidden;
+  transform: translate(0, -50%);
+  z-index: 3;
 }
 
+.product__description--top {
+  left: 50%;
+  transform: translate(-50%, -125%);
+}
+
+.product__description--left {
+  left: -25%;
+  transform: translate(-100%, -50%);
+}
+
+.product__description--bottom {
+  left: 50%;
+  transform: translate(-50%, 25%);
+}
 
 .product:hover .product__description {
   visibility: visible;
@@ -109,6 +213,7 @@
   align-items: center;
   width: 40px;
   height: 40px;
+  z-index: 2;
 }
 
 .product__btn:hover {
@@ -116,7 +221,7 @@
 }
 
 .product__btn:hover .btn-pad {
-  border: 2px solid #ffffffd3;
+  border: 2px solid #ffffffa6;
   background: #00000055;
 }
 
@@ -144,6 +249,38 @@
   border-radius: 20px;
   transition: all 0.2s ease;
   box-shadow: 2px 2px 3px #00000031;
+}
+
+.product-card {
+  display: grid;
+  grid-template-columns: 1fr 15px;
+  column-gap: 10px;
+  padding: 15px;
+  min-width: 150px;
+}
+
+.product-card__headline,
+.product-card__subline {
+  font-size: 1.3rem;
+}
+
+.product-card__price {
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+.product-card__subline {
+  margin-bottom: 15px;
+  white-space:nowrap;
+  max-width: 120px;
+  overflow-x: hidden;
+  text-overflow: ellipsis;
+}
+
+.product-card__arrow {
+  font-size: 4rem;
+  align-self: flex-start;
+  line-height: 15px;
 }
 
 @media screen and (min-width: 600px) {
