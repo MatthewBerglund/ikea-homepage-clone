@@ -1,19 +1,32 @@
+.footer {
+  background: #f5f5f5;
+}
+
+.footer__main-container {
+  padding: 60px 20px;
+  display: grid;
+  row-gap: 60px;
+}
+
 .footer__scroll-top {
   display: flex;
   justify-content: center;
+  background: #ffffff;
+  margin-bottom: 40px;
+  padding: 40px 0;
 }
 
 .scroll-top-btn {
+	align-items: center;
+	background: #f5f5f5;
+	border-radius: 20px;
 	border: none;
 	display: flex;
-	align-items: center;
+	overflow: hidden;
 	width: 40px;
   height: 40px;
-	border-radius: 20px;
-	background: #f5f5f5;
-	overflow: hidden;
-  transition: all 0.3s cubic-bezier(.77,0,.18,1);
   padding: 8px 8px;
+  transition: all 0.3s cubic-bezier(.77,0,.18,1);
 }
 
 .scroll-top-btn__icon {
@@ -24,7 +37,6 @@
 .scroll-top-btn__text {
   font-weight: bold;
   margin-left: 10px;
-  overflow: hidden;
   white-space: nowrap;
 }
 
@@ -33,4 +45,102 @@
 	width: 160px;
   background: #dfdfdf;
   cursor: pointer;
+}
+
+.footer__register {
+  display: grid;
+  row-gap: 30px;
+  grid-template-rows: 1fr 1fr;
+}
+
+.register-card {
+	display: grid;
+	grid-template-rows: minmax(auto, max-content) minmax(auto, max-content) minmax(auto, max-content) minmax(auto, max-content);
+	row-gap: 12px;
+	align-items: flex-start;
+}
+
+.register-card__icon {
+  height: 100%;
+  fill: #484848;
+}
+
+.register-card__headline {
+  font-size: 1.6rem;
+}
+
+.register-card__subline,
+.register-card__link {
+  font-size: 1.5rem;
+  color: #484848;
+  line-height: 1.5;
+}
+
+.register-card__link {
+  text-decoration: underline;
+}
+
+.register-card__link:hover {
+  cursor: pointer;
+}
+
+.register-card__sign-up {
+  background: #000000;
+  color: #ffffff;
+  border-radius: 20px;
+  padding: 10px 20px;
+  font-size: 1.3rem;
+  font-weight: bold;
+  width: max-content;
+}
+
+.register-card__sign-up:hover {
+  cursor: pointer;
+}
+
+.list-nav {
+  display: grid;
+}
+
+.list-nav__top {
+  padding: 40px 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-top: 1px solid #dfdfdf;
+}
+
+.list-nav__top:hover {
+  cursor: pointer;
+}
+
+.list-nav__bottom {
+  max-height: 500px;
+  transition: all 0.3s ease-out;
+  overflow: hidden;
+}
+
+.list-nav__bottom--closed {
+  max-height: 0;
+}
+
+.list-nav__icon {
+  fill: #000000;
+  transition: all 0.3s ease-out;
+}
+
+.list-nav__icon--reversed {
+  transform: rotate(180deg);
+}
+
+.list-nav__list {
+  list-style-type: none;
+  opacity: 1;
+  font-size: 1.5rem;
+  line-height: 3;
+  transition: all 0.3s ease-out;
+}
+
+.list-nav__list--hidden {
+  opacity: 0;
 }
