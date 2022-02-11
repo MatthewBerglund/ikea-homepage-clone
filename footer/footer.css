@@ -1,0 +1,36 @@
+.footer__scroll-top {
+  display: flex;
+  justify-content: center;
+}
+
+.scroll-top-btn {
+	border: none;
+	display: flex;
+	align-items: center;
+	width: 40px;
+  height: 40px;
+	border-radius: 20px;
+	background: #f5f5f5;
+	overflow: hidden;
+  transition: all 0.3s cubic-bezier(.77,0,.18,1);
+  padding: 8px 8px;
+}
+
+.scroll-top-btn__icon {
+  fill: #000000;
+  min-width: 24px;
+}
+
+.scroll-top-btn__text {
+  font-weight: bold;
+  margin-left: 10px;
+  overflow: hidden;
+  white-space: nowrap;
+}
+
+.scroll-top-btn:hover {
+	padding: 10px 15px;
+	width: 160px;
+  background: #dfdfdf;
+  cursor: pointer;
+}
