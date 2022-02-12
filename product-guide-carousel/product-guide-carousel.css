@@ -81,27 +81,27 @@
 }
 
 .product-guide-item--faucet {
-  background-image: url("/assets/images/hand_faucet.jpg");
+  background-image: url("../assets/images/hand_faucet.jpg");
 }
 
 .product-guide-item--switch {
-  background-image: url("/assets/images/hand_lamp_switch.jpg");
+  background-image: url("../assets/images/hand_lamp_switch.jpg");
 }
 
 .product-guide-item--pillow {
-  background-image: url("/assets/images/head_pillow.jpg");
+  background-image: url("../assets/images/head_pillow.jpg");
 }
 
 .product-guide-item--bins {
-  background-image: url("/assets/images/white_trash_bins.jpg");
+  background-image: url("../assets/images/white_trash_bins.jpg");
 }
 
 .product-guide-item--chair {
-  background-image: url("/assets/images/chair.jpg");
+  background-image: url("../assets/images/chair.jpg");
 }
 
 .product-guide-item--table {
-  background-image: url("/assets/images/gamlehult-chair-0d5143342879ccdb6499425b328816a6.jpg");
+  background-image: url("../assets/images/gamlehult-chair-0d5143342879ccdb6499425b328816a6.jpg");
 }
 
 .product-guide-item--meatballs {
