@@ -100,14 +100,14 @@
 
 .list-nav {
   display: grid;
+  border-top: 1px solid #dfdfdf;
 }
 
 .list-nav__top {
-  padding: 40px 0;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  border-top: 1px solid #dfdfdf;
+  padding: 40px 0;
 }
 
 .list-nav__top:hover {
@@ -136,11 +136,127 @@
 .list-nav__list {
   list-style-type: none;
   opacity: 1;
-  font-size: 1.5rem;
+  font-size: 1.4rem;
   line-height: 3;
   transition: all 0.3s ease-out;
+  padding-bottom: 40px;
 }
 
 .list-nav__list--hidden {
   opacity: 0;
+}
+
+.list-nav__link {
+  color: #484848;
+}
+
+.list-nav__link:hover {
+  cursor: pointer;
+  text-decoration: underline;
+}
+
+.footer__options {
+	display: grid;
+	grid-template-rows: repeat(4, minmax(auto, max-content));
+}
+
+.social-payment {
+	display: flex;
+	justify-content: space-between;
+	flex-wrap: wrap;
+}
+
+.social-nav {
+	display: flex;
+	width: 220px;
+	justify-content: space-between;
+	margin-bottom: 20px;
+}
+
+.social-link {
+	border: 1px solid #dfdfdf;
+	display: flex;
+	padding: 4px;
+	border-radius: 28px;
+}
+
+.social-link__icon {
+  min-width: 24px;
+  fill: #000000;
+}
+
+.payment-nav {
+	display: flex;
+	justify-content: space-between;
+	width: 250px;
+  margin-bottom: 20px;
+}
+
+.payment-link {
+	padding: 4px;
+	border: 1px solid #dfdfdf;
+	display: flex;
+	border-radius: 3px;
+}
+
+.lang-options {
+	display: flex;
+	align-items: flex-start;
+	justify-content: space-between;
+	width: 200px;
+  margin-bottom: 20px;
+}
+
+.home-link {
+	padding: 10px 15px;
+	border: 1px solid #dfdfdf;
+	border-radius: 20px;
+	font-weight: bold;
+	font-size: 1.2rem;
+}
+
+.select-container {
+	border: 1px solid #dfdfdf;
+	border-radius: 20px;
+	padding: 10px 15px;
+}
+
+.lang-select {
+	background: none;
+	border: none;
+	font-size: 1.2rem;
+	font-weight: bold;
+}
+
+.lang-select:hover {
+  cursor: pointer;
+}
+
+.copyright {
+	font-size: 1.2rem;
+  margin-bottom: 20px;
+}
+
+.legal {
+	display: flex;
+	flex-wrap: wrap;
+}
+
+.legal-link {
+	font-size: 1.2rem;
+	margin-right: 20px;
+  margin-bottom: 20px;
+}
+
+.social-link:hover,
+.payment-link:hover,
+.home-link:hover, 
+.select-container:hover {
+  cursor: pointer;
+  border: 1px solid #484848;
+}
+
+.legal-link:hover {
+  cursor: pointer;
+  text-decoration: underline;
 }
