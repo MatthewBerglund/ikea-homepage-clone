@@ -1,21 +1,21 @@
 .services {
   display: grid;
-  row-gap: 1px;
   grid-template-rows: 1fr 1fr 1fr 1fr;
+  row-gap: 1px;
 }
 
 .service-card {
-	padding: 30px;
-	background: #f5f5f5;
-	display: grid;
-	grid-template-rows: 25px minmax(auto, max-content) minmax(auto, max-content) 1fr;
-	row-gap: 8px;
-	align-items: flex-start;
+  align-items: flex-start;
+  background: #f5f5f5;
+  display: grid;
+  grid-template-rows: 25px minmax(auto, max-content) minmax(auto, max-content) 1fr;
+  padding: 30px;
+  row-gap: 8px;
 }
 
 .service-card__icon {
-  height: 100%;
   fill: #484848;
+  height: 100%;
 }
 
 .service-card__headline {
@@ -24,8 +24,8 @@
 
 .service-card__subline,
 .service-card__link {
-  font-size: 1.5rem;
   color: #484848;
+  font-size: 1.5rem;
   line-height: 1.5;
 }
 
@@ -39,9 +39,9 @@
 
 @media screen and (min-width: 600px) {
   .services {
+    column-gap: 1px;
     grid-template-columns: 1fr 1fr;
     grid-template-rows: 1fr 1fr;
-    column-gap: 1px;
   }
 
   .service-card {
@@ -52,7 +52,7 @@
 
 @media screen and (min-width: 900px) {
   .services {
-    grid-template-rows: 1fr;
     grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr;
   }
 }
