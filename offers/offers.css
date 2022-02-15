@@ -1,0 +1,26 @@
+.offers {
+  display: grid;
+  grid-template-rows: 1fr 1fr;
+  row-gap: 40px;
+}
+
+.offers__link:hover {
+  cursor: pointer;
+}
+
+.offers__link:focus {
+  border: 2px solid #000000;
+}
+
+.offers__img {
+  width: 100%;
+}
+
+@media screen and (min-width: 600px) {
+  .offers {
+    column-gap: 20px;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr;
+    row-gap: 0;
+  }
+}

@@ -1,0 +1,33 @@
+.about {
+  display: grid;
+  grid-template-rows: 1fr 1fr 1fr;
+  row-gap: 50px;
+  width: 100%;
+}
+
+.about__link:hover {
+  cursor: pointer;
+}
+
+.about__link:focus {
+  border: 2px solid #000000;
+}
+
+.about__banner {
+  width: 100%;
+}
+
+@media screen and (min-width: 600px) {
+  .about {
+    column-gap: 20px;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+  }
+}
+
+@media screen and (min-width: 900px) {
+  .about {
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr;
+  }
+}

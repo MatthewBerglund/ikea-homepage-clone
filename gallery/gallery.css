@@ -1,0 +1,334 @@
+.gallery__categories {
+  max-width: fit-content;
+  overflow-x: scroll;
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(11, auto);
+  grid-template-rows: 1fr;
+  column-gap: 10px;
+  scrollbar-width: none;
+  margin-bottom: 10px;
+}
+
+.gallery__categories::-webkit-scrollbar {
+  width: 0;
+}
+
+.gallery__category-btn {
+  background: #f5f5f5;
+  border: 1px solid #f5f5f5;
+  border-radius: 20px;
+  display: block;
+  font-size: 1.2rem;
+  font-weight: bold;
+  height: 40px;
+  margin-top: 6px;
+  padding: 10px 25px;
+  width: fit-content;
+  white-space: nowrap;
+  margin-bottom: 15px;
+}
+
+.gallery__category-btn:hover {
+  cursor: pointer;
+  background: #dfdfdf;
+}
+
+.gallery__category-btn:active {
+  background: #cccccc;
+}
+
+.gallery__category-btn:focus {
+  border: 1px solid black;
+}
+
+.gallery__grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  row-gap: 20px;
+  column-gap: 20px;
+}
+
+.gallery__grid-item {
+  grid-column: span 1;
+  grid-row: span 4;
+  position: relative;
+}
+
+.gallery__grid-item:hover {
+  cursor: pointer;
+}
+
+.gallery__grid-item:focus {
+  border: 2px solid #000000;
+}
+
+.gallery__grid-item:hover .product__btn,
+.gallery__grid-item:focus .product__btn {
+  cursor: pointer;
+  display: flex;
+}
+
+.gallery__grid-item:nth-of-type(2) {
+  aspect-ratio: 1 / 1;
+  grid-row: span 3; 
+}
+
+.gallery__img {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+}
+
+.gallery__load {
+  display: flex;
+  justify-content: center;
+  margin-top: 40px;
+}
+
+.gallery__load-btn {
+  background: #000000;
+  border-radius: 20px;
+  border: 1px solid #f5f5f5;
+  color: #ffffff;
+  display: block;
+  font-size: 1.4rem;
+  font-weight: bold;
+  height: 40px;
+  margin-bottom: 15px;
+  margin-top: 6px;
+  padding: 10px 25px;
+  transition: all 0.2s ease;
+  white-space: nowrap;
+  width: fit-content;
+}
+
+.gallery__load-btn:hover {
+  background: #333333;
+  cursor: pointer;
+}
+
+.gallery__load-btn:active {
+  transform: scale(0.95);
+}
+
+.product {
+  left: 50%;
+  position: absolute;
+  top: 50%;
+}
+
+.product--stackholmen {
+  left: 23%;
+  top: 38%;
+}
+
+.product--gamlehult {
+  left: 66%;
+  top: 72%;
+}
+
+.product--skurup {
+  left: 27%;
+  top: 4%;
+}
+
+.product--nordkisa {
+  left: 64%;
+  top: 34%;
+}
+
+.product--nordli {
+  left: 26%;
+  top: 44%;
+}
+
+.product--karmsund {
+  left: 20%;
+  top: 12%;
+}
+
+.product--bryggja {
+  left: 43%;
+  top: 60%;
+}
+
+.product--stockholm-lamp {
+  left: 75%;
+  top: 5%;
+}
+
+.product--enhet {
+  left: 43%;
+  top: 37%;
+}
+
+.product--ledsjo {
+  left: 52%;
+  top: 30%;
+}
+
+.product--lettan {
+  left: 75%;
+  top: 33%;
+}
+
+.product--bjorkan {
+  left: 60%;
+  top: 55%;
+}
+
+.product--nysjon {
+  left: 64%;
+  top: 68%;
+}
+
+.product--nissafors {
+  left: 15%;
+  top: 72%;
+}
+
+.product--utsund {
+  left: 61%;
+  top: 29%;
+}
+
+.product--vardagen {
+  left: 53%;
+  top: 58%;
+}
+
+.product--rort {
+  left: 41%;
+  top: 81%;
+}
+
+.product--fado {
+  left: 35%;
+  top: 29%;
+}
+
+.product--malm {
+  left: 41%;
+  top: 49%;
+}
+
+.product__description {
+  background: white;
+  box-shadow: 0 0 5px #00000091;
+  display: block;
+  left: 125%;
+  opacity: 0;
+  position: absolute;
+  top: 50%;
+  transform: translate(0, -50%);
+  transition: all 0.3s ease;
+  visibility: hidden;
+  z-index: 3;
+}
+
+.product__description--top {
+  left: 50%;
+  transform: translate(-50%, -125%);
+}
+
+.product__description--left {
+  left: -25%;
+  transform: translate(-100%, -50%);
+}
+
+.product__description--bottom {
+  left: 50%;
+  transform: translate(-50%, 25%);
+}
+
+.product:hover .product__description {
+  opacity: 1;
+  visibility: visible;
+}
+
+.product__btn {
+  align-items: center;
+  display: none;
+  height: 40px;
+  justify-content: center;
+  width: 40px;
+  z-index: 2;
+}
+
+.product__btn:hover {
+  cursor: pointer;
+}
+
+.product__btn:hover .btn-pad {
+  background: #00000055;
+  border: 2px solid #ffffffa6;
+}
+
+.product__btn:hover .btn-pad__center {
+  height: 30%;
+  width: 30%;
+}
+
+.product__btn:active .btn-pad {
+  background: #000000a4;
+}
+
+.btn-pad {
+  align-items: center;
+  background: #0000001f;
+  border-radius: 20px;
+  box-sizing: border-box;
+  display: flex;
+  height: 35px;
+  justify-content: center;
+  transition: all 0.2s ease;
+  width: 35px;
+}
+
+.btn-pad__center {
+  background: #ffffff;
+  border-radius: 20px;
+  box-shadow: 2px 2px 3px #00000031;
+  height: 35%;
+  transition: all 0.2s ease;
+  width: 35%;
+}
+
+.product-card {
+  column-gap: 10px;
+  display: grid;
+  grid-template-columns: 1fr 15px;
+  min-width: 150px;
+  padding: 15px;
+}
+
+.product-card__headline,
+.product-card__subline {
+  font-size: 1.3rem;
+}
+
+.product-card__price {
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+.product-card__subline {
+  margin-bottom: 15px;
+  max-width: 120px;
+  overflow-x: hidden;
+  text-overflow: ellipsis;
+  white-space:nowrap;
+}
+
+.product-card__arrow {
+  align-self: flex-start;
+  font-size: 4rem;
+  line-height: 15px;
+}
+
+@media screen and (min-width: 600px) {
+  .gallery__grid {
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+}
