@@ -333,6 +333,11 @@
 @media screen and (min-width: 1200px) {
   .footer__main-container {
     padding: 60px 60px 20px 10%;
+    grid-template-columns: 1fr 2fr;
+  }
+
+  .footer__scroll-top {
+    display: none;
   }
 
   .scroll-top-btn {
