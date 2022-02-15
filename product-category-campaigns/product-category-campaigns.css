@@ -34,10 +34,10 @@
 }
 
 .campaign-category__link {
-  display: block;
   background: #ffffff;
-  border: 1px solid #dfdfdf;
   border-radius: 20px;
+  border: 1px solid #dfdfdf;
+  display: block;
   font-size: 1.2rem;
   font-weight: bold;
   height: 40px;
@@ -47,8 +47,8 @@
 }
 
 .campaign-category__link:hover {
-  cursor: pointer;
   border: 1px solid #929292;
+  cursor: pointer;
 }
 
 @media screen and (min-width: 600px) {
