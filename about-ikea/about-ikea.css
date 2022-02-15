@@ -15,9 +15,9 @@
 
 @media screen and (min-width: 600px) {
   .about {
+    column-gap: 20px;
     grid-template-columns: 1fr 1fr;
     grid-template-rows: 1fr 1fr;
-    column-gap: 20px;
   }
 }
 
