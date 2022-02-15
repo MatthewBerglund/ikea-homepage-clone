@@ -172,6 +172,7 @@
 	width: 220px;
 	justify-content: space-between;
 	margin-bottom: 20px;
+  align-items: flex-start;
 }
 
 .social-link {
@@ -241,7 +242,6 @@
 .legal {
 	display: flex;
 	flex-wrap: wrap;
-  margin-bottom: 40px;
 }
 
 .legal-link {
@@ -327,5 +327,37 @@
   .legal-link {
     margin-right: 0;
     margin-left: 20px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .footer__main-container {
+    padding: 60px 60px 20px 10%;
+  }
+
+  .scroll-top-btn {
+    position: fixed;
+    left: 5%;
+    bottom: 40px;
+    transform: translate(-50%, 0);
+    color: #dfdfdf;
+    background: #000000;
+  }
+
+  .scroll-top-btn:hover {
+    color: #dfdfdf;
+    background: #000000;
+  }
+
+  .scroll-top-btn__icon {
+    fill: #dfdfdf;
+  }
+
+  .social-nav {
+    margin-right: 20px;
+  }
+
+  .social-payment {
+    justify-content: flex-start;
   }
 }

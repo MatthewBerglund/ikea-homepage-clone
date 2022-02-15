@@ -22,6 +22,15 @@ const aboutNav = {
 bindEvents();
 
 function bindEvents() {
+  const scrollTop = document.querySelector('.scroll-top-btn');
+  scrollTop.addEventListener('click', () => {
+    window.scrollTo({
+      top: 0,
+      left: 0,
+      behavior: 'smooth'
+    });
+  });
+
   serviceNav.clickableArea.addEventListener('click', toggleClosed.bind(serviceNav));
   supportNav.clickableArea.addEventListener('click', toggleClosed.bind(supportNav));
   aboutNav.clickableArea.addEventListener('click', toggleClosed.bind(aboutNav));
