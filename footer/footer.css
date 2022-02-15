@@ -191,7 +191,7 @@
 .payment-nav {
 	display: flex;
 	justify-content: space-between;
-	width: 250px;
+	width: 300px;
   margin-bottom: 20px;
 }
 
@@ -200,13 +200,14 @@
 	border: 1px solid #dfdfdf;
 	display: flex;
 	border-radius: 3px;
+  justify-content: center;
 }
 
 .lang-options {
 	display: flex;
 	align-items: flex-start;
 	justify-content: space-between;
-	width: 200px;
+	width: 250px;
   margin-bottom: 20px;
 }
 
