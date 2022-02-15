@@ -96,6 +96,7 @@
 
 .register-card__sign-up:hover {
   cursor: pointer;
+  background: #333333;
 }
 
 .list-nav {
@@ -273,8 +274,8 @@
 
   .footer__navs {
     display: grid;
-    grid-template-columns: 1fr 1fr 2fr;
-    column-gap: 20px;
+    grid-template-columns: auto auto 1fr;
+    column-gap: 10%;
   }
 
   .list-nav {
@@ -337,7 +338,7 @@
   }
 
   .footer__scroll-top {
-    display: none;
+    position: absolute;
   }
 
   .scroll-top-btn {
