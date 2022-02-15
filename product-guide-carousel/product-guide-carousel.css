@@ -109,9 +109,9 @@
 }
 
 .product-guide-item__link {
-  display: block;
   background: #ffffff;
   border-radius: 20px;
+  display: block;
   font-size: 1.2rem;
   font-weight: bold;
   height: 40px;
@@ -120,8 +120,8 @@
 }
 
 .product-guide-item__link:hover {
-  cursor: pointer;
   background: #f5f5f5;
+  cursor: pointer;
 }
 
 .product-guide-item__link--arrow {
