@@ -84,6 +84,11 @@
   cursor: pointer;
 }
 
+.register-card__link:focus {
+  background: #3d3dd1;
+  color: #dfdfdf;
+}
+
 .register-card__sign-up {
   background: #000000;
   border-radius: 20px;
@@ -97,6 +102,11 @@
 .register-card__sign-up:hover {
   background: #333333;
   cursor: pointer;
+}
+
+.register-card__sign-up:focus {
+  background: #3d3dd1;
+  color: #ffffff;
 }
 
 .list-nav {
@@ -153,6 +163,12 @@
 
 .list-nav__link:hover {
   cursor: pointer;
+  text-decoration: underline;
+}
+
+.list-nav__link:focus {
+  background: #000000;
+  color: #ffffff;
   text-decoration: underline;
 }
 
@@ -260,9 +276,21 @@
   cursor: pointer;
 }
 
+.social-link:focus,
+.payment-link:focus,
+.home-link:focus, 
+.select-container:focus {
+  border: 2px solid #000000;
+}
+
 .legal-link:hover {
   cursor: pointer;
   text-decoration: underline;
+}
+
+.legal-link:focus {
+  background: #000000;
+  color: white;
 }
 
 @media screen and (min-width: 900px) {

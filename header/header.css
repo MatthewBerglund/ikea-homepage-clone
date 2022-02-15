@@ -18,6 +18,10 @@
   cursor: pointer;
 }
 
+.stock-notice:focus {
+  border: 2px solid #ffffff;
+}
+
 .stock-notice__icon {
   fill-rule: white;
   margin-right: 13px;

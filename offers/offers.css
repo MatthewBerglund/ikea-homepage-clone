@@ -8,6 +8,10 @@
   cursor: pointer;
 }
 
+.offers__link:focus {
+  border: 2px solid #000000;
+}
+
 .offers__img {
   width: 100%;
 }

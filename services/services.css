@@ -37,6 +37,10 @@
   cursor: pointer;
 }
 
+.service-card__link:focus {
+  border: 2px solid #000000;
+}
+
 @media screen and (min-width: 600px) {
   .services {
     column-gap: 1px;

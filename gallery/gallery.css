@@ -59,14 +59,19 @@
   cursor: pointer;
 }
 
-.gallery__grid-item:hover .product__btn {
+.gallery__grid-item:focus {
+  border: 2px solid #000000;
+}
+
+.gallery__grid-item:hover .product__btn,
+.gallery__grid-item:focus .product__btn {
   cursor: pointer;
   display: flex;
 }
 
 .gallery__grid-item:nth-of-type(2) {
   aspect-ratio: 1 / 1;
-  grid-row: span 3;
+  grid-row: span 3; 
 }
 
 .gallery__img {

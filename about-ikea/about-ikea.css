@@ -9,6 +9,10 @@
   cursor: pointer;
 }
 
+.about__link:focus {
+  border: 2px solid #000000;
+}
+
 .about__banner {
   width: 100%;
 }

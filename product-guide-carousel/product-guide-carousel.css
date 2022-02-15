@@ -124,6 +124,10 @@
   cursor: pointer;
 }
 
+.product-guide-item__link:focus {
+  border: 2px solid #000000;
+}
+
 .product-guide-item__link--arrow {
   align-items: center;
   display: flex;
